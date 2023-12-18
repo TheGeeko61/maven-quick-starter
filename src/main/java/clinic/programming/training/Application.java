@@ -1,7 +1,19 @@
 package clinic.programming.training;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class Application {
-    
+   
+    public void greet() {
+    	List<String> greetings = new ArrayList<>();
+	greetings.add("Hello");
+
+	for (String greeting:greetings) {
+		System.out.println("Greeting:  " + greeting);
+	}
+    }
+
     public Application() {
         System.out.println ("Inside Application");
     }

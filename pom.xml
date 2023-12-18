@@ -3,13 +3,28 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
 		http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>clinic.programmming</groupId>
-  <artifactId>example</artifactId>
-  <version>1.0</version>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>clinic.programmming</groupId>
+    <artifactId>maven-quick-starter</artifactId>
+    <version>1.0</version>
 
-  <properties>
-	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	  <java.version>17</java.version>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>17</java.version>
+    </properties>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.11.0</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
